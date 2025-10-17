@@ -1,0 +1,208 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+RewriteCond %{HTTP_HOST} ^brothersindia.com$
+RewriteRule (.*) https://www.brothersindia.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ https://www.brothersindia.com/$1 [R=301,L]
+
+ErrorDocument 404 https://www.brothersindia.com/
+ErrorDocument 403 https://www.brothersindia.com/
+
+Redirect 301 /washing-and-air-jet-cleaning-machines.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /washing-and-air-jet-cleaning-machines-list.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /injectable-powder-filling-machines-list.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /injectable-liquid-filling-machines-list.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /dry-syrup-powder-filling-machines-list.php https://www.brothersindia.com/dry-syrup-powder-filling-machines-list.html
+Redirect 301 /liquid-filling-machines-list.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /capping-machines-list.php https://www.brothersindia.com/capping-machines-list.html
+Redirect 301 /wet-glue-labelling-machines-list.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /sticker-self-adhesive-labelling-machines-list.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /leaflet-outserter-pasting-machine.php https://www.brothersindia.com/leaflet-outserter-pasting-machine.html
+Redirect 301 /check-weigher-list.php https://www.brothersindia.com/check-weigher.html
+Redirect 301 /shrink-sleeve-machines-list.php https://www.brothersindia.com/shrink-sleeve-machines-list.html
+Redirect 301 /track-and-trace-solution-mup-systems-list.php https://www.brothersindia.com/turn-table.html
+Redirect 301 /Airjet-Blowing-and-Cleaning-Machine-Airwash-50.php https://www.brothersindia.com/airwash-100.html
+Redirect 301 /Airjet-Blowing-and-Cleaning-Machine-Airwash-100.php https://www.brothersindia.com/airwash-100.html
+Redirect 301 /Inverter-type-Airjet-Blowing-and-Cleaning-AIRWASH-120INV.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Bottle-Unscrambler-with-Airjet-Cleaning-AIRWASH-120.UN.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Airjet-Blowing-and-Cleaning-Machine-Airwash-150.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Airjet-Blowing-and-Cleaning-Machine-Airwash-200.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Airjet-Blowing-and-Cleaning-Machine-Airwash-220.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Inverter-type-Airjet-Blowing-and-Cleaning-AIRWASH-240.INV.php https://www.brothersindia.com/airwash-240-inv.html
+Redirect 301 /Bottle-Unscrambler-with-Airjet-Cleaning-AIRWASH-300.php https://www.brothersindia.com/airwash-300-un.html
+Redirect 301 /Rotary-Bottle-washing-machine-BOTTLEWASH-90.php https://www.brothersindia.com/bottlewash-90.html
+Redirect 301 /Linear-Bottle-washing-machine-BOTTLEWASH-120.php https://www.brothersindia.com/bottlewash-120.html
+Redirect 301 /lInear-Bottle-washing-machine-BOTTLEWASH-240.php https://www.brothersindia.com/airwash-240-inv.html
+Redirect 301 /External-Vial-Washing-Machine-VIALWASH-60.Ext.php https://www.brothersindia.com/bottlewash-90.html
+Redirect 301 /Vial-Washing-Machine-for-Pharmaceuticals-VIALWASH-120.php https://www.brothersindia.com/bottlewash-120.html
+Redirect 301 /Rotary-Vial-Washing-Machine-VIALWASH-120R.php https://www.brothersindia.com/vialwash-120r.html
+Redirect 301 /Vial-Washing-Machine-for-Pharmaceuticals-Vialwash-240.php https://www.brothersindia.com/washing-and-air-jet-cleaning-machines.html
+Redirect 301 /Semi-Auto-dry-syrup-powder-filling-DRYFILL-20.php https://www.brothersindia.com/dryfill-20.html
+Redirect 301 /Single-Head-Dry-Syrup-Powder-Filling-DRYFILL-30.php https://www.brothersindia.com/dry-syrup-powder-filling-machines-list.html
+Redirect 301 /Semi-Auto-Augur-type-Dry-syrup-Powder-Filling-DRYFILL-30S.php https://www.brothersindia.com/dry-syrup-powder-filling-machines-list.html
+Redirect 301 /Twin-Head-Augur-Powder-Filling-machine-DRYFILL-60.TWIN.php https://www.brothersindia.com/dryfill-60twin.html
+Redirect 301 /Rotary-Dry-Syrup-Powder-Filling-Machine-DRYFILL-80R.php https://www.brothersindia.com/dryfill-60twin.html
+Redirect 301 /Rotary-Dry-Syrup-Powder-Filling-&amp;-Capping-DRYFILL-80RC.php https://www.brothersindia.com/dryfill-60twin.html
+Redirect 301 /Rotary-Dry-Syrup-Powder-Filling-Machine-DRYFILL-120R.php https://www.brothersindia.com/dryfill-120rc.html
+Redirect 301 /Rotary-Dry-Syrup-Powder-Filling-&amp;-Capping-DRYFILL-120RC.php https://www.brothersindia.com/dryfill-120rc.html
+Redirect 301 /Injectable-Powder-Filling-and-Rubber-Stoppering-DRYFILL-120i.php https://www.brothersindia.com/dryfill-120i.html
+Redirect 301 /Injectable-Powder-Filling-and-Rubber-Stoppering-DRYFILL-250i.Twin.php https://www.brothersindia.com/dryfill-250i-twin.html
+Redirect 301 /Semi-Automatic-Liquid-Filling-Machine-LIQFILL-20.php https://www.brothersindia.com/liqfill-20.html
+Redirect 301 /Twin-Head-Viscose-Liquid-Filling-Machine-LIQFILL-20e.php https://www.brothersindia.com/liqfill-20.html
+Redirect 301 /Peristaltic-Pump-based-8-head-liquid-filling-machine-Liqfill-60e.php https://www.brothersindia.com/liqfill-60e.html
+Redirect 301 /Liquid-Filling-for-Bottles-LIQFILL-80.php https://www.brothersindia.com/liqfill-80.html
+Redirect 301 /Four-Head-Viscose-Liquid-Filling-Machine-LIQFILL-80e.php https://www.brothersindia.com/liqfill-80.html
+Redirect 301 /Linear-Flow-Meter-based-Liquid-Filling-Machine-LIQFILL-80FM.php https://www.brothersindia.com/liqfill-80fm.html
+Redirect 301 /Injectable-Liquid-Vial-Filling-and-Rubber-Stoppering-LIQFILL-100ir.php https://www.brothersindia.com/liqfill-100ir.html
+Redirect 301 /Injectable-Liquid-Motion-Vial-Filling-and-Rubber-Stoppering-LIQFILL-100ir.Motion.php https://www.brothersindia.com/liqfill-100ir.html
+Redirect 301 /Liquid-Filling-for-Bottles-LIQFILL-120.php https://www.brothersindia.com/liqfill-120.html
+Redirect 301 /Eight-Head-Gear-Pump-Liquid-Filling-Machine-LIQFILL-120e.php https://www.brothersindia.com/liqfill-120.html
+Redirect 301 /Flow-Meter-based-Liquid-Filling-Machine-LIQFILL-120FM.php https://www.brothersindia.com/liqfill-120.html
+Redirect 301 /Rotary-Monoblock-Liquid-Filling-and-Capping-LIQFILL-120MB.php https://www.brothersindia.com/liqfill-120mb.html
+Redirect 301 /Rotary-Flow-Meter-based-Filling-and-Capping-LIQFILL-150FM.php https://www.brothersindia.com/liqfill-150fm.html
+Redirect 301 /Three-in-One-Filling-with-Screw-and-ROPP-Capping-LIQFILL-150MBS.php https://www.brothersindia.com/liqfill-150-mbs.html
+Redirect 301 /Linear-Motion-Liquid-Filling-Machine-LIQFILL-160.Motion.php https://www.brothersindia.com/liqfill-160-motion.html
+Redirect 301 /Twin-Track-Liquid-Filling-Machine-LIQFILL-160.php https://www.brothersindia.com/liqfill-160.html
+Redirect 301 /Rotary-Flow-Meter-based-Filling-and-Capping-LIQFILL-240FM.php https://www.brothersindia.com/liqfill-240fm.html
+Redirect 301 /Linear-High-Speed-Motion-Liquid-Filling-LIQFILL-250.Motion.php https://www.brothersindia.com/liqfill-250-motion.html
+Redirect 301 /Rotary-High-Speed-Flow-Meter-based-Filling-and-Capping-LIQFILL-300FM.php https://www.brothersindia.com/liqfill-250-motion.html
+Redirect 301 /Vaccumetric-Bottle-Filling-Capping-and-Labelling-3-in-1-VACFILL-250MBL.php https://www.brothersindia.com/vacfill-250mbl.html
+Redirect 301 /Semi-Automatic-Viscose-Product-Filling-VISCOFILL-20.php https://www.brothersindia.com/viscofill-20-hot-fill.html
+Redirect 301 /Automatic-Viscose-Product-Filling-Machine-VISCOFILL-60.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /Automatic-Viscose-Product-Filling-Machine-VISCOFILL-80.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /Eight-head-viscose-peanut-butter-filling-machine-VISCOFILL-120.php https://www.brothersindia.com/viscofill-120.html
+Redirect 301 /Automatic-Viscose-Product-Filling-Machine-VISCOFILL-150.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /High-Speed-Viscose-Balm-lotion-filling-machine-VISCOFILL-300.php https://www.brothersindia.com/viscofill-300.html
+Redirect 301 /Dosing-Measuring-cup-pressing-machine-CAPPRESS-150.php https://www.brothersindia.com/cappress-150.html
+Redirect 301 /Rotary-Plug-Capping-pnp-Eight-Head-CAPPRESS-160SR.PNP.php https://www.brothersindia.com/cappress-150.html
+Redirect 301 /Semi-Automatic-Capping-Machine-CAPSEAL-20.php https://www.brothersindia.com/capseal-20.html
+Redirect 301 /Single-head-capping-for-ROPP-Cap-CAPSEAL-40R.php https://www.brothersindia.com/capseal-40r.html
+Redirect 301 /Single-head-bottle-screw-capping-machine-CAPSEAL-40SR.php https://www.brothersindia.com/capping-machines-list.html
+Redirect 301 /Lug-Cap-Capping-machine-CAPSEAL-60L.php https://www.brothersindia.com/capping-machines-list.html
+Redirect 301 /Linear-Screw-Capping-Machine-CAPSEAL-80L.php https://www.brothersindia.com/capseal-80l.html
+Redirect 301 /Rotary-Capping-four-head-ROPP-Cap-CAPSEAL-80R.php https://www.brothersindia.com/rotary-labelling-machines.html
+Redirect 301 /Rotary-Screw-Capping-four-Head-CAPSEAL-80SR.php https://www.brothersindia.com/rotary-labelling-machines.html
+Redirect 301 /Rotary-Screw-Capping-pnp-four-Head-CAPSEAL-80SR.PNP.php https://www.brothersindia.com/rotary-labelling-machines.html
+Redirect 301 /Rotary-Vial-Capping-Machine-CAPSEAL-120.php https://www.brothersindia.com/capseal-120sr-pnp.html
+Redirect 301 /Rotary-Monoblock-Capping-CAPSEAL-120MB.php https://www.brothersindia.com/capseal-120sr-pnp.html
+Redirect 301 /Rotary-Capping-Six-head-ROPP-Cap-CAPSEAL-120R.php https://www.brothersindia.com/capseal-120r.html
+Redirect 301 /Rotary-Capping-Eight-Head-ROPP-Cap-CAPSEAL-160R.php https://www.brothersindia.com/capseal-160r.html
+Redirect 301 /Rotary-Capping-Ten-Head-ROPP-Cap-CAPSEAL-200R.php https://www.brothersindia.com/capseal-20.html
+Redirect 301 /Rotary-Capping-Twelve-Head-ROPP-Cap-CAPSEAL-240R.php https://www.brothersindia.com/capseal-240sr-pnp.html
+Redirect 301 /Rotary-Screw-Capping-pnp-Twelve-Head-CAPSEAL-240SR.PNP.php https://www.brothersindia.com/capseal-240sr-pnp.html
+Redirect 301 /Rotary-Vial-Capping-Machine-CAPSEAL-250.php https://www.brothersindia.com/rotary-labelling-machines.html
+Redirect 301 /Rotary-Screw-Capping-pnp-Sixteen-Head-CAPSEAL-300SR.PNP.php https://www.brothersindia.com/capseal-300sr-pnp.html
+Redirect 301 /Vial-Capping-Machine-Twelve-Head-CAPSEAL-400.php https://www.brothersindia.com/capseal-400.html
+Redirect 301 /Semi-Automatic-Wet-Glue-Labelling-Machine.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /Combi-Wet-Glue-and-Sticker-Labelling.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /Wet-Glue-Labelling-for-Bottles.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /Wrap-Round-Paper-Label-Labelling-machine.php https://www.brothersindia.com/labelstik-120r.html
+Redirect 301 /High-Speed-Wet-Glue-Bottle-Labelling-LABELWET-400.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /LABELSTIK-20-AND-40-list.php https://www.brothersindia.com/labelstik-20-&-labelstik-40.html
+Redirect 301 /Front-and-Back-two-side-Sticker-Labelling-LABELSTIK-100F.TWIN.php https://www.brothersindia.com/labelstik-100f-twin.html
+Redirect 301 /Flat-Bottle-Sticker-Labelling-Machine-LABELSTIK-100F.php https://www.brothersindia.com/labelstik-100f-twin.html
+Redirect 301 /Security-Seal-Carton-Labelling-Machine-LABELSTIK-120C.Twin.php https://www.brothersindia.com/labelstik-100f-twin.html
+Redirect 301 /Flat-Pouch-Carton-Top-Side-Label-application-LABELSTIK-120C.php https://www.brothersindia.com/labelstik-100f-twin.html
+Redirect 301 /PFS-Sticker-Labelling-Machine-LABELSTIK-120H.php https://www.brothersindia.com/labelstik-120h.html
+Redirect 301 /Rotary-Twin-Label-Wrap-Round-Sticker-Labelling-Machine-LABELSTIK-120R.Twin.php https://www.brothersindia.com/labelstik-120r.html
+Redirect 301 /Rotary-Wrap-Round-Sticker-Labelling-Machine-LABELSTIK-120R.php https://www.brothersindia.com/labelstik-120r.html
+Redirect 301 /Vial-Bottle-Sticker-Labelling-LABELSTIK-150.php https://www.brothersindia.com/labelstik-150.html
+Redirect 301 /Wrap-Round-Self-Adhesive-Labeller-LABELSTIK-150B.php https://www.brothersindia.com/labelstik-150b.html
+Redirect 301 /Security-Seal-Carton-Labelling-Machine-LABELSTIK-250C.Twin.php https://www.brothersindia.com/labelstik-250c-twin.html
+Redirect 301 /Front-and-Back-two-side-Sticker-Labelling-LABELSTIK-250F.TWIN.php https://www.brothersindia.com/labelstik-250f-twin.html
+Redirect 301 /High-Speed-Sticker-Labelling-for-Vials-Bottles-LABELSTIK-300.php https://www.brothersindia.com/labelstik-300.html
+Redirect 301 /Roll-to-Roll-Hologram-Label-application-machine-LABELSTIK-300HG.php https://www.brothersindia.com/labelstik-150b-twin.html
+Redirect 301 /Linear-300-Speed-Sticker-Labelling-machine-LABELSTIK-300LR.php https://www.brothersindia.com/labelstik-300lr.html
+Redirect 301 /Rotary-Ampoule-Vial-Sticker-Labelling-with-400-speed-LABELSTIK-400.php https://www.brothersindia.com/labelstik-400r.html
+Redirect 301 /Rotary-Ampoule-Vial-Sticker-Labelling-with-600-speed-LABELSTIK-600.php https://www.brothersindia.com/labelstik-600.html
+Redirect 301 /Customised-Labellin-Solution-Labelstik-Excel-Series.php https://www.brothersindia.com/labelstik-excel.html
+Redirect 301 /Empty-Tube-Sticker-Labelling-Machine-LABELTUBE-60.php https://www.brothersindia.com/labeltube-60.html
+Redirect 301 /Label-Roll-Counting-and-Winding-Machine-LABELCOUNT-250.php https://www.brothersindia.com/labelstik-150b-twin.html
+Redirect 301 /Outserter-Leaflet-Pasting-for-side-AHLI-60s.php https://www.brothersindia.com/ahli-150.html
+Redirect 301 /Top-side-Leaflet-Outserter-Pasting-AHLI-100.php https://www.brothersindia.com/ahli-150.html
+Redirect 301 /Top-side-Leaflet-Outserter-Pasting-AHLI-120R.php https://www.brothersindia.com/ahli-150.html
+Redirect 301 /Top-side-Leaflet-Outserter-Pasting-AHLI-150.php https://www.brothersindia.com/ahli-150.html
+Redirect 301 /High-Speed-Leaflet-Outserter-Pasting-Machine-OCTOPUS-300.php https://www.brothersindia.com/octopus-300.html
+Redirect 301 /Shrink-Sleeve-applicator-with-shrink-tunnel.php https://www.brothersindia.com/shrink-sleeve-machines-list.html
+Redirect 301 /Sleeving-machine-with-heat-shrink-tunnel.php https://www.brothersindia.com/shrink-sleeve-machines-list.html
+Redirect 301 /Track-and-Trace-System-for-Shrink-Bundle.php https://www.brothersindia.com/shrink-sleeve-machines-list.html
+Redirect 301 /Track-and-Trace-for-Cartons-and-Show-Box.php https://www.brothersindia.com/turn-table.html
+Redirect 301 /TURN-TABLE-etc-list.php https://www.brothersindia.com/turn-table.html
+Redirect 301 /Online-Check-Weigher-System-for-Pharma-industries.php https://www.brothersindia.com/check-weigher.html
+Redirect 301 /capsule-filling-machine.php https://www.brothersindia.com/capsule-filling-machine.html
+Redirect 301 /complete-tablet-bottle-packing-lines-list.php https://www.brothersindia.com/bottle-feeder-machine.html
+Redirect 301 /dry-syrup-powder-filling-lines-list.php https://www.brothersindia.com/dry-syrup-powder-filling-machines-list.html
+Redirect 301 /liquid-filling-lines.php https://www.brothersindia.com/liquid-filling-machines-list.html
+Redirect 301 /Rotary-Screw-Capping-pnp-Eight-Head-CAPSEASL-160SR.PNP.php https://www.brothersindia.com/rotary-labelling-machines.html
+Redirect 301 /Automatic-Glue-Labelling-machine.php https://www.brothersindia.com/wet-glue-labelling-machines-list.html
+Redirect 301 /Semi-Automatic-Sticker-Labelling-machine.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /Contineous-Inkjet-Coding-System-for-labelling.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /Thermal-Transfer-Coding-System-for-labeller.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /Rubber-Stereo-Coding-System-for-labelling.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /Hot-Foil-Coder-for-Labelling-machine.php https://www.brothersindia.com/sticker-self-adhesive-labelling-machines-list.html
+Redirect 301 /Linear-Feeder-for-Vials-and-Bottles.php https://www.brothersindia.com/bottle-feeder.html
+Redirect 301 /Vibratory-Bottle-feeder-with-Turn-Table.php https://www.brothersindia.com/bottle-feeder-machine.html
+Redirect 301 /Cap-Elevator-for-feeding-of-caps-to-capping-machine.php https://www.brothersindia.com/cap-elevator.html
+Redirect 301 /Inspection-conveyor-for-Visual-Inspection-and-packing.php https://www.brothersindia.com/conveyors.html
+Redirect 301 /Swing-Conveyor-to-connect-in-packing-line.php https://www.brothersindia.com/conveyors.html
+Redirect 301 /Transfer-Belt-Conveyor.php https://www.brothersindia.com/conveyors.html
+Redirect 301 /Turn-Table-suitable-for-packing-line-of-various-size.php https://www.brothersindia.com/turn-table.html
+Redirect 301 /Packing-conveyor-system.php https://www.brothersindia.com/conveyors.html
+Redirect 301 /automatic-table-top-capsule-filling-machine.php https://www.brothersindia.com/automatic-table-top-capsule-filling-machine.html
+Redirect 301 /automatic-capsule-filling-machine.php https://www.brothersindia.com/automatic-capsule-filling-machine.html
+
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript  
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript  
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php83” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

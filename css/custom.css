@@ -1,0 +1,217 @@
+#exampleModal .close,
+.loginmodal-container #close {
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+}
+#exampleModal .close,
+.loginmodal-container .close {
+    float: right;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+}
+.float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 60px;
+    left: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.my-float {
+    margin-top: 8px;
+}
+#exampleModal .close {
+    font-size: 35px;
+    left: 50%;
+    top: 32px;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+#exampleModal .close:hover,
+.modal-content .close:hover {
+    color: #ea5429;
+}
+.modal-open .modal {
+    z-index: 99999;
+}
+.modal-backdrop.show {
+    opacity: 0.8;
+    z-index: 9999;
+}
+.quick-view-tab-content .tab-pane {
+    border: 1px solid #ddd;
+}
+.modal-body .cart-plus-minus span {
+    display: none;
+}
+.modal-dialog {
+    min-width: 100%;
+}
+.modal-body {
+    display: block;
+    justify-content: inherit;
+    padding: 15px;
+}
+.loginmodal-container {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+    position: relative;
+    pointer-events: visible;
+}
+.loginmodal-container #close {
+    right: 0;
+    top: 0;
+    padding: 1px 6px;
+    background: #000;
+}
+.loginmodal-container button .close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.loginmodal-container .close {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.2;
+}
+.loginmodal-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #f10712;
+    color: #fff;
+    padding: 10px;
+}
+.loginmodal-container input[type="text"],
+input[type="password"] {
+    height: 35px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid silver;
+    border-radius: 2px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #9c9c9c;
+    
+}
+.loginmodal-container .txtar {
+    padding: 8px;
+    width: 100%;
+    min-height: 50px;
+    color: #9c9c9c;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    
+}
+.submit.btn-style {
+    background-color: #f10712;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    width: auto;
+}
+.submit.btn-style:hover {
+    background-color: #242424;
+}
+@media (max-width: 600px) {
+    .navbar23 {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 99;
+        padding: 10px 0;
+    }
+}
+@media (min-width: 600px) {
+    #mobile {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .book-app,
+    .footer-box {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-top.pb-50 {
+        padding-bottom: 80px !important;
+    }
+    .footer-logo img {
+        width: 100%;
+    }
+    .footer-copyright {
+        margin-bottom: 15px !important;
+    }
+    .pb-5,
+    .pb1-5 {
+        padding-bottom: 3rem !important;
+    }
+    .lblrr {
+        margin-bottom: 50px !important;
+    }
+    .lblp {
+        padding-bottom: 0 !important;
+    }
+    .footer-box {
+        display: flex !important;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #0f4da2;
+        color: #fff;
+        z-index: 999999;
+        grid-template-columns: 1fr 1fr;
+    }
+    .book-app {
+        padding: 2%;
+        float: left;
+        line-height: 40px;
+        max-height: 100px;
+    }
+    #header .header-btn-collapse-nav {
+        top: -5px !important;
+        padding: 0 !important;
+    }
+    .fa-bars:before,
+    .fa-navicon:before {
+        font-size: 22px !important;
+    }
+    .lblic {
+        display: none !important;
+    }
+}
+.pb-5 {
+    padding-bottom: 0 !important;
+}
+.pb1-5 {
+    padding-bottom: 3rem !important;
+}

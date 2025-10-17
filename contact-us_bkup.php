@@ -1,0 +1,689 @@
+<?php  $mycaptcha =  mt_rand(100000, 999999); 
+session_start();
+$_SESSION['scaptcha'] = $mycaptcha;
+    setcookie("ccaptcha",$mycaptcha,time()+300,'/','brothersindia.com',1);
+// Check if the request is over HTTPS or HTTP
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https://" : "http://";
+
+// Get the current domain
+$domain = $_SERVER['HTTP_HOST'];
+
+// Get the current page URL
+$current_url = $protocol . $domain . $_SERVER['REQUEST_URI'];
+
+// Output the current page URL
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact Us | Brothers Pharmamach</title>	
+		<meta name="keywords" content="Brothers Pharmamach" />
+		<meta name="description" content="Brothers Pharmamach, the leading Manufacturer, Supplier & Exporter of Pharmaceutical Labeling Machine, Capping Machine, Filling and Washing machine in India. We also offer Bottle Sticker Labelling Machine.">
+		<meta name="author" content="Brothers Pharmamach">
+		<link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+		<link id="googleFonts" href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/demos/demo-accounting-1.css">
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-accounting-1.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<div class="body">
+			<header id="header" class="fixed-header">
+				<div class="header-body border-top-0 h-auto box-shadow-none lbl">
+					<div class="header-top header-top-small-minheight header-top-simple-border-bottom">
+						<div class="container-fluid px-lg-5 py-2">
+							<div class="header-row justify-content-between">
+								<div class="header-column col-auto px-0">
+									<div class="header-row">
+										<div class="header-nav-top">
+											<ul class="nav nav-pills position-relative">
+												<li class="nav-item d-none d-sm-block">
+													<span class="d-flex align-items-center font-weight-medium ws-nowrap text-3 ps-0">
+														<a href="mailto: info@brothersindia.com" class="text-decoration-none text-color-dark text-color-hover-primary">
+															<i class="icons icon-envelope font-weight-bold position-relative text-4 top-3 me-1"></i>
+															info@brothersindia.com
+														</a>
+													</span>
+												</li>
+												<li
+													class="nav-item nav-item-left-border nav-item-left-border-remove nav-item-left-border-sm-show">
+													<span
+														class="d-flex align-items-center font-weight-medium text-color-dark ws-nowrap text-3">
+														<a href="tel:+91 9825037971"
+															class="text-decoration-none text-color-dark text-color-hover-primary">
+															<i class="icons icon-phone font-weight-bold position-relative text-3 top-1 me-2"></i>
+															+91 9825037971
+														</a>
+													</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="header-column justify-content-end col-auto px-0 d-md-flex size">
+									<div class="header-row">
+										<nav class="header-nav-top">
+											<ul class="nav" id="mainNav">
+												<li>
+													<a class="nav-link" href="global-presence.html">
+														Global Presence
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="client.html">
+														Client
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="sitemap.html">
+														Sitemap
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="container-fluid px-3 px-lg-5 p-static">
+						<div class="row align-items-center py-3">
+							<div class="col-auto col-lg-1 col-xxl-2 me-auto me-lg-0">
+								<div class="header-logo" data-clone-element-to="#offCanvasLogo">
+									<a href="index.html">
+										<img alt="img" src="images/logo/logo.png" class="lbll">
+									</a>
+								</div>
+							</div>
+							<div class="col-auto col-lg-10 col-xxl-9 justify-content-lg-center">
+								<div class="header-nav header-nav-links justify-content-lg-center">
+									<div
+										class="header-nav-main header-nav-main-text-capitalize header-nav-main-arrows header-nav-main-effect-2">
+										<nav class="collapse">
+											<ul class="nav nav-pills" id="mainNav">
+												<li>
+													<a href="index.html" class="nav-link ">
+														Home
+													</a>
+												</li>
+												<li class="dropdown">
+													<a href="about-us.html" class="nav-link dropdown-toggle">About Us</a>
+													<ul class="dropdown-menu">
+														<li><a href="management-team.html"
+																class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Management
+																Team</a></li>
+														<li><a href="our-achivements.html"
+																class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Our
+																Milestone</a></li>
+														<li><a href="manufacturing-facility.html"
+																class="dropdown-item anim-hover-translate-right-5px transition-3ms bg-transparent text-color-hover-primary text-lg-2 py-lg-2">Manufacturing
+																Facility</a></li>
+													</ul>
+												</li>
+												<li>
+													<a class="nav-link" href="products.html">
+														Products
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="news-events.html">
+														News & Events
+													</a>
+												</li>
+												<li>
+													<a class="nav-link" href="application.html">
+														Application
+													</a>
+												</li>											
+												<li>
+													<a class="nav-link active" href="contact-us.php">
+														Contact Us
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<div class="col-auto col-lg-1 col-xxl-1 lblo">
+								<div class="d-flex justify-content-end align-items-center">
+									<a href="contact-us.php"
+										class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium px-3 py-2 text-2-5 btn-swap-1 ms-3 d-none d-md-flex"
+										data-clone-element="1">
+										<span>Enquiry<i class="fa-solid fa-arrow-right ms-2"></i></span>
+									</a>
+									<button class="btn header-btn-collapse-nav rounded-pill" data-bs-toggle="offcanvas"
+										href="#offcanvasMain" role="button" aria-controls="offcanvasMain">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<style>
+				.fixed-header
+				{
+					position: fixed;
+				}
+				.breadcrumb 
+				{
+					text-align: center!important;
+					display: block!important;
+				}
+			</style>
+
+			<div role="main" class="main px-3 px-lg-5">                    
+				
+				<div class="page-header py-0 bg-secondary px-3 px-xl-0 border-radius-2 p-relative mb-0 overflow-hidden lbla">
+					<div class="overflow-hidden p-absolute top-0 left-0 bottom-0 h-100 w-100">
+						<div class="custom-el-5 custom-pos-4">
+							<img class="img-fluid opacity-2 opacity-hover-2" src="img/demos/accounting-1/svg/waves.svg" alt="waves">
+						</div>
+					</div>                    
+					<div class="container p-relative z-index-1 py-2">
+						<div class="row mh-200px mh-lg-300px align-items-center py-4">
+							<div class="col" style="text-align:center;">
+							
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                                    <h1 class="text-dark text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">Contact Us</h1>
+                                </div>
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 ">
+										<li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+										<li class="active text-color-light opacity-7">Contact Us</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Intro -->
+				<div class="container-fluid pt-4 pt-lg-5 pb-4" id="intro">
+					<div class="row pt-4">
+						<div class="col">
+							<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+								<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4"><span class="d-inline-flex py-1 px-2" style="color: #000;">Contact Us</span></span>
+							</div>
+                        </div>
+                    </div>
+					<div class="row align-items-center">
+						<div class="col-lg-6 mb-5 mb-lg-0">
+							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+								<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-2">Reach out to us using the options below:</h2>
+							</div>
+						</div>
+						<div class="col-lg-6 p-relative">
+							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+								<p class="mb-0">Whether you have a question about our services, need advice on tax planning, or want to schedule a consultation, our team of experienced professionals is ready to assist you.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5 pt-2">
+						<div class="col-lg-4 mb-5 mb-lg-0">
+							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+
+                                <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'autoplay': true, 'dots': false, 'autoplayTimeout': 5000, 'margin': 10, 'animateOut': 'fadeOut'}">
+                                    <div>
+                                        <img class="img-fluid border-radius-2" src="images/about-us/contct-us.jpg" alt="">
+                                    </div>                                    
+                                </div>                              
+
+							</div>
+						</div>
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+
+                            <div class="feature-box feature-box-secondary">
+                                <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+                                    <img src="img/icons/pin-light.svg" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+                                </div>
+                                <div class="feature-box-info ps-3">
+                                    <strong class="d-block text-4-5 text-dark mb-1">Registered Office & Factory</strong>
+                                    <p class="mb-0 text-3-5 line-height-7">Plot No.2, Phase II, GIDC</p>
+                                    <p class="mb-0 text-3-5 line-height-7">Vatva, Ahmedabad 382 445</p>
+									<p class="mb-0 text-3-5 line-height-7">Gujarat, INDIA. </p>
+									<p class="mb-0 text-3-5 line-height-7"><strong>Fax No.-  +91-79-40213220  /</strong></p>
+									<p class="mb-0 text-3-5 line-height-7"><strong>Fax No.-  +91-79-25835885</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box feature-box-secondary mt-4 pt-2">
+                                <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+                                    <img src="images/email.png" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                </div>
+                                <div class="feature-box-info ps-3">
+                                    <strong class="d-block text-4-5 text-dark mb-1">E-mail</strong>
+                                    <p class="mb-0 text-3-5 line-height-7">Email Inquiries:</p>
+                                    <p class="mb-0 text-3-5 line-height-7 pb-3"><a href="mailto:info@brothersindia.com" class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline"> info@brothersindia.com</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="feature-box feature-box-secondary">
+                                <div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+                                    <img src="img/icons/phone-2.svg" width="30" height="30" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                                </div>
+                                <div class="feature-box-info ps-3">
+                                    <strong class="d-block text-4-5 text-dark mb-1">Contact Details</strong>
+                                    <p class="mb-0 text-3-5 line-height-7">Domestic:- <a href="tel:+91-9825037971" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline"> +91-9825037971</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Domestic:- <a href="tel: +91-9925008189" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-9925008189</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Domestic:- <a href="tel: +91-9825006052" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-9825006052</a></p>
+                                    <p class="mb-0 text-3-5 line-height-7">Export:- <a href="tel: +91-9825300706" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-9825300706</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Export:- <a href="tel:  +91-9825006052" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">   +91-9825006052</a></p>
+                                    <p class="mb-0 text-3-5 line-height-7">Sales Inquiry:- <a href="tel: +91-79-40213224" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline"> +91-79-40213224</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Export Inquiry:- <a href="tel: +91-79-40213226" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-79-40213226</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Spares Inquiry:- <a href="tel:  +91-79-40213225" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">   +91-79-40213225</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Service Support:- <a href="tel:  +91-79-40213215" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-79-40213215</a></p>
+									<p class="mb-0 text-3-5 line-height-7">Purchase Inquiry:- <a href="tel:  +91-79-40213213" 
+										class="text-color-secondary text-color-hover-primary font-weight-semi-bold text-decoration-underline">  +91-79-40213213</a></p>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+
+				<div class="bg-grey-100 px-3 px-xl-0 border-radius-2 p-relative overflow-hidden mt-5">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.7418362608164!2d72.63490817531199!3d22.95973297921787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8712909d728b%3A0x5eafda77f6432f3c!2sBrothers%20Pharmamach%20(India)%20Pvt%20ltd%20%7C%20Sticker%2C%20Vial%2C%20Bottle%2C%20Ampoule%20Labelling%20Machine!5e0!3m2!1sen!2sin!4v1731931266003!5m2!1sen!2sin" width="100%" height="650px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+				<div class="container-fluid pt-5">
+					<div class="row">
+						<div class="col-lg-7 mb-5 mb-lg-0">
+							<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+								<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4"><span class="d-inline-flex py-1 px-2" style="color: #000;">Contact Form</span></span>
+							</div>
+							<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Get in Touch </h2>
+                            <form class="contact-form pt-3" id="defaultForm" method="post" action="mail.php">
+								<input type="hidden" value="<?php echo $current_url; ?>"  name="curl" class="form-control">
+								<input type="hidden" value="Get It From Brothers India"  name="pname" class="form-control">
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2"> Name </label>
+										
+										<input name="name" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" placeholder="Your Name:" required="true">
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Email </label>
+										<input name="email" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" type="email" placeholder="Your Email:" required="true">
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-lg-6">
+										<label class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Phone Number</label>
+										
+										<input type="text" id="quantity3"  name="phone" onchange="validateMobile(this);" onblur="validateMobile(this);" placeholder="Phone / Mobile Number" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2"  required="true" title="Please Put Valid Number">
+										
+									</div>
+
+									<script type="text/javascript">
+										var phone=null;
+										function validateMobile(e1) {
+
+												phone = e1.value;
+												if (phone!='undefined' || phone!=null)
+												{
+													phone = phone.replace(/[^0-9]/g,'');
+													if (phone.length <= 8 || phone.length > 12)
+													{
+														document.getElementById('quantity3').focus();
+														e1.value='';
+													}
+												}
+												else
+													{
+														document.getElementById('quantity3').focus();
+														e1.value='';
+												}
+											};
+										</script>
+
+									<div class="form-group col-lg-6">
+										<label class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Location</label>
+										<input name="city" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" type="text" placeholder="City/Country:" required="true">
+										
+									</div>
+								</div>						
+								<div class="row">
+									<div class="form-group col">
+										<label class="form-label font-weight-bold text-uppercase text-dark mb-1 text-2">Message</label>
+										
+										<textarea name="message" oncopy="return false" onpaste="return false" onkeypress="allowAlphaNumericSpace(event)" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" cols="" rows="8" placeholder="Message:" required="true"></textarea>
+										
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col">
+									<h4> Validation Code : <?php echo $mycaptcha;?></h4>
+                                    <input id="captcha" type="text" name="captcha" class="form-control text-3 h-auto border-width-2 border-radius-2 border-color-grey-200 py-2" placeholder="Enter Validation Code" required>
+                                    <input id="kcaptcha" type="hidden" name="kcaptcha" value="<?php echo $mycaptcha; ?>" >
+                                    <br>
+									
+                                        <input style=""type="submit" class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1" id="submit1" value="Submit Now" name="submit1">
+                                    
+									</div>
+								</div>
+
+							</form>
+						</div>
+						<div class="col-lg-5 ps-lg-5">
+							<div class="appear-animation pt-lg-5 mt-lg-2" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<div class="d-flex align-items-center pt-2 pb-4">
+									<p class="d-inline-block mb-0 font-weight-bold line-height-1"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0">50+</mark></p>
+									<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic ps-2">Years of Experience</span>
+								</div>
+							</div>
+                            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+                                <div class="py-2 d-flex align-items-center text-4-5 n-ls-1 text-dark">
+                                    <div>
+                                        <img src="img/demos/accounting-1/icons/icon-4.svg" width="48" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary me-md-2 p-relative top-2'}" />
+                                    </div>
+                                    <div class="ps-1">
+                                        <p class="mb-0 text-3-5 p-relative bottom-2"><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i><i class="fas fa-star custom-text-color-2 text-2"></i></p>
+                                        <strong class="custom-font-secondary pe-2"></strong><span class="d-none d-md-inline-block pe-2"> | </span>100% Satisfied Customers
+                                    </div>
+                                </div>
+                            </div>
+							<div class="appear-animation pt-4" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+								<span class="badge bg-light text-dark border custom-font-secondary border-all-light box-shadow-8 n-ls-05 rounded-pill text-uppercase font-weight-semibold text-2 px-3 py-2 px-1 me-1"><span class="d-inline-flex py-1 px-2">Quick Reply</span></span>
+								<p class="mb-0 text-dark mt-2 text-3-5">Usually in 24 hours in working days.</p>
+							</div>
+                            <!-- Explore Further -->
+                            <div class="bg-secondary border-radius-2 p-relative overflow-hidden mt-5">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col px-0 text-center text-color-light">
+                                            <div class="d-flex flex-column">
+                                                <div class="flex-grow-1">
+                                                    <span class="d-inline-block text-3 py-4 px-5 text-uppercase font-weight-medium custom-bg-gradient-1 w-100">Explore Further:</span>
+                                                </div>
+                                                <div class="me-3 ps-3 p-relative bottom-1 pt-3">
+                                                    <a href="#" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2">Learn About Our Process <i class="fas fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                                <div class="py-3 p-relative bottom-1 border-start border-color-light-rgba-20">
+                                                    <a href="#" class="btn btn-arrow-effect-1 bg-transparent text-light border-0 text-lg-3-5 py-2">View Our Projects <i class="fas fa-arrow-right ms-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!--Footer-->
+	<footer id="footer" class="border-0 bg-light px-3 px-lg-5 pt-0 text-3">
+		<div class="border-bottom border-bottom-color-grey-100">
+			<div class="container-fluid ">
+				<div class="row align-items-center pb-5">
+					<div class="col-lg-3">
+						<a href="index.html">
+							<img alt="img" src="images/logo/logo.png">
+						</a>
+					</div>
+					<div class="col-lg-9 pt-4 pt-lg-0">
+						<div class="d-flex flex-column flex-lg-row justify-content-lg-end py-4 align-items-lg-center">
+							<div class="pe-4">
+								<div class="feature-box feature-box-secondary align-items-center">
+									<div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+										<img src="img/icons/phone-2.svg" width="30" height="30" alt="" data-icon
+											data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+									</div>
+									<div class="feature-box-info ps-2">
+										<strong
+											class="d-block text-uppercase text-color-secondary p-relative top-2">Call
+											Us</strong>
+										<a href="tel:+91 9825037971"
+											class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">+91
+											9825037971</a>
+									</div>
+								</div>
+							</div>
+							<div class=" pt-4 pt-lg-0 pe-0">
+								<div class="feature-box feature-box-secondary align-items-center">
+									<div class="feature-box-icon feature-box-icon-lg p-static box-shadow-7">
+										<img src="images/email.png" width="30" height="30" alt="" data-icon
+											data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+									</div>
+									<div class="feature-box-info ps-2">
+										<strong
+											class="d-block text-uppercase text-color-secondary p-relative top-2">Send
+											E-mail</strong>
+										<a href="mailto:info@brothersindia.com"
+											class="text-decoration-none font-secondary text-5 font-weight-semibold text-color-dark text-color-hover-primary transition-2ms negative-ls-05 ws-nowrap p-relative bottom-2">
+											info@brothersindia.com </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid pt-5 pb-5">
+			<div class="row pt-3">
+				<div class="col-lg-4">
+					<h4 class="text-color-dark font-weight-bold mb-3">Brothers Pharmamach (India) Pvt.Ltd.</h4>
+
+					<p class="text-3-5 text-color-grey">Brothers Pharmamach, the largest Manufacturer & Supplier of Pharmaceutical and Packaging Machinery in India. </p>
+
+					<div class="d-flex align-items-center pt-2 pb-4">
+						<p class="d-inline-block mb-0 font-weight-bold line-height-1"><mark
+								class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-8 mark-height-30 n-ls-5 p-0">50+</mark>
+						</p>
+						<span class="custom-font-tertiary text-5 text-dark n-ls-1 fst-italic ps-2">Years of
+							Experience</span>
+					</div>
+
+					<ul class="social-icons social-icons-clean social-icons-medium">
+						<li class="social-icons-facebook">
+							<a href="https://www.facebook.com/Brothers-Pharmamach-295564511128255/?modal=admin_todo_tour"
+								target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="social-icons-twitter">
+							<a href="https://twitter.com/brothers_pvt" target="_blank" title="instagram">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social-icons-linkedin">
+							<a href="https://www.linkedin.com/company/brothersindia/" target="_blank" title="youtube">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="social-icons-youtube">
+							<a href="https://www.youtube.com/channel/UCD1dewSwluKr21nhFsA9g2A/" target="_blank"
+								title="youtube">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-2 pt-4 pt-lg-0">
+					<h4 class="text-color-dark font-weight-bold mb-3">Quick Links</h4>
+					<ul class="list list-unstyled">
+						<li>
+							<a href="index.html" class="text-color-grey text-color-hover-primary">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="about-us.html" class="text-color-grey text-color-hover-primary">About Us</a>
+						</li>
+						<li>
+							<a class="text-color-grey text-color-hover-primary" href="products.html">
+								Products
+							</a>
+						</li>
+						<li>
+							<a class="text-color-grey text-color-hover-primary" href="news-events.html">
+								News & Event
+							</a>
+						</li>
+						<li>
+							<a class="text-color-grey text-color-hover-primary" href="application.html">
+								Application
+							</a>
+						</li>
+						<li>
+							<a class="text-color-grey text-color-hover-primary" target="_blank" href="contact-us.php">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-2 pt-4 pt-lg-0">
+					<h4 class="text-color-dark font-weight-bold mb-3">Other Links</h4>
+					<ul class="list list-unstyled">
+						<li><a href="management-team.html" class="text-color-grey text-color-hover-primary">Our Management Team</a></li>
+						<li><a href="our-achivements.html" class="text-color-grey text-color-hover-primary">Our Milestones</a></li>
+						<li><a href="manufacturing-facility.html" class="text-color-grey text-color-hover-primary">Manufacturing Facility</a></li>
+						<li><a href="global-presence.html" class="text-color-grey text-color-hover-primary">Global Presence</a></li>
+						<li><a href="client.html" class="text-color-grey text-color-hover-primary">Our Clients</a></li>
+						<li><a href="sitemap.html" class="text-color-grey text-color-hover-primary">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 pt-4 pt-lg-0">
+					<h4 class="text-color-dark font-weight-bold mb-3">Contact Us</h4>
+					<i class="fa fa-building"></i>
+					<p style="margin-left: 27px; margin-top: -27px;">
+						<b> Brothers Pharmamach (India) Pvt.Ltd. </b>
+					</p>
+					<i class="fa fa-home"></i>
+					<p style="margin-top: -26px;margin-left: 30px;">
+						Plot No.2, Phase II, GIDC Vatva, Ahmedabad <br> 382 445 Gujarat, INDIA. <br> 
+						<b> Fax No.+91-7940213220 / +91-7925835885 </b>
+					</p>
+					<p>
+						<i class="fa fa-phone" style="transform: rotate(3deg);"></i>
+						<a href="tel:+91 9825037971" style="margin: 10px;"> +91 9825037971</a>
+					</p>
+					<p>
+						<i class="fas fa-envelope-open"></i>
+						<a href="mailto:info@brothersindia.com" style="margin: 10px;font-size: 1.0rem;">
+							info@brothersindia.com</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright bg-transparent ">
+			<div class="container-fluid">
+				<hr>
+				<div class="row">
+					<div class="col-lg-6 text-center text-lg-start py-3">
+						<p class="text-3 mb-0 opacity-6">
+							Copyright © 2025
+							<a href="https://www.indiantradebird.com/"
+								class="text-decoration-underline text-color-secondary text-color-hover-primary"
+								target="blank">Indian Trade Bird</a>
+						</p>
+					</div>
+					<div class="col-lg-6 py-3 text-center text-lg-end">
+						<a href="https://www.indiantradebird.com/policy-center"
+							class="text-color-grey text-color-hover-primary">Privacy Policy</a>
+						<a href="https://www.indiantradebird.com/policy-center"
+							class="text-color-grey text-color-hover-primary ms-3">Terms & Conditions</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--End Footer-->
+
+		</div>
+
+		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMain" aria-labelledby="offcanvasMain">
+			<div class="offcanvas-header">
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="mb-4" id="offCanvasLogo"></div>
+				<nav class="offcanvas-nav w-100" id="offCanvasNav"></nav>
+			</div>
+		</div>
+
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+		<script src="js/theme.js"></script>
+		<script src="js/demos/demo-accounting-1.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/theme.init.js"></script>
+		<script>
+			(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+				({key: "YOUR_API_KEY", v: "weekly"});
+
+			async function initMap() {
+				const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+				const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+					"marker",
+				);
+				const map = new Map(document.getElementById("googlemaps"), {
+					zoom: 14,
+					center: { lat: -37.817240, lng: 144.955820 },
+					mapId: "YOUR_MAP_API_ID",
+				});
+				const markers = [
+					{
+						position: { lat: -37.817240, lng: 144.955820 },
+						title: "Office 1<br>Melbourne, 121 King St, Australia<br>Phone: 123-456-1234",
+					}
+				];
+				const infoWindow = new InfoWindow();
+				markers.forEach(({ position, title }, i) => {
+					const pin = new PinElement({
+						background: "#e36159",
+						borderColor: "#e36159",
+						glyphColor: "#FFF",
+					});
+					const marker = new AdvancedMarkerElement({
+						position,
+						map,
+						title: `${title}`,
+						content: pin.element,
+					});
+					marker.addListener("click", ({ domEvent, latLng }) => {
+						const { target } = domEvent;
+
+						infoWindow.close();
+						infoWindow.setContent(marker.title);
+						infoWindow.open(marker.map, marker);
+					});
+				});	
+
+			}
+			initMap();
+		</script>
+		<!-- <script src="js/views/view.contact.js"></script> -->
+</body>
+</html>

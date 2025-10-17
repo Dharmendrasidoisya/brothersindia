@@ -1,0 +1,227 @@
+.float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 60px;
+    left: 10px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 8px;
+}
+
+#exampleModal .close {
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 35px;
+    left: 50%;
+    line-height: 1;
+    opacity: 1;
+    position: absolute;
+    text-shadow: 0 1px 0 #fff;
+    top: 32px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease 0s;
+}
+#exampleModal .close:hover {
+    color: #ea5429;
+}
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+.modal-content .close:hover {
+    color: #ea5429;
+}
+.modal-open .modal {
+    z-index: 99999;
+}
+.modal-backdrop.show {
+    z-index: 9999;
+}
+.quick-view-tab-content .tab-pane {
+    border: 1px solid #ddd;
+}
+.modal-body .cart-plus-minus span {
+    display: none;
+}
+.modal-dialog {
+        min-width: 100%;
+    }
+    .modal-body {
+        display: block;
+        justify-content: inherit;
+        padding: 15px;
+    }
+/* pop up buttone start */
+
+.loginmodal-container {
+    padding: 30px;
+    max-width: max-content;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+	pointer-events: visible;
+    font-family: Lexend, sans-serif !important;
+}
+.loginmodal-container #close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 1px 6px;
+    background: #4594d1;
+    color: #fff;
+    opacity: 1;
+    border: 1px solid;
+}
+.loginmodal-container button .close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+.loginmodal-container .close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.loginmodal-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0px !important;
+    background: #4594d1;
+    color: #fff;
+    padding: 0px;
+    border-radius: 10px !important;
+    font-weight: 600;
+}
+.loginmodal-container input[type="text"], input[type="password"] {
+    height: 35px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top-color: rgb(217, 217, 217);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 2px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #9c9c9c;
+}
+.loginmodal-container .txtar {
+    padding: 8px;
+    width: 100%;
+    min-height: 50px;
+    color: #9c9c9c;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+/* pop up end */
+
+.submit.btn-style {
+    background-color: #4594d1;
+    border: medium none;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 600;
+    width: auto;
+}
+.submit.btn-style:hover {
+    background-color: #000;
+}
+
+#defaultForm{
+    padding-top: 0rem !important;
+}
+.col{
+    margin-bottom: 0rem !important;
+}
+
+
+@media (max-width: 600px){
+
+.navbar23{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0px;
+}
+.loginmodal-container h1{
+    margin-bottom: 0px !important;
+    border-radius: 10px !important;
+    font-weight: 600;
+}
+#defaultForm{
+    padding-top: 0rem !important;
+}
+.form-group, .form-switch.form-switch-md {
+    margin-bottom: 0rem !important;
+}
+.lblmess{
+    height: 50px !important;
+}
+.modal-dialog{
+    margin: 10px !important;
+}
+.modal-dialog {
+    min-width: 85% !important;
+}
+.loginmodal-container {
+    padding: 20px !important;
+}
+.loginmodal-container .close {
+    font-size: 15px !important;
+}
+
+}
+
+@media (min-width: 600px){
+
+#mobile{
+    display: none;
+}
+
+
+}
+
+@media (max-width: 767px){
+.footer-top.pb-50 {
+    padding-bottom: 80px !important;
+}
+}
+button:focus{
+    outline: 5px auto;
+}
+.form-group, .form-switch.form-switch-md {
+    margin-bottom: 0rem !important;
+}
